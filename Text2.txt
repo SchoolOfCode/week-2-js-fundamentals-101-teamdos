@@ -1,0 +1,39 @@
+MVP 3:
+Create a function toggleTemperatureDisplay that returns either Celsius or Fahrenheit depending on which was the last returned 
+(if the last value returned was Fahrenheit, then you’ll want to return Celsius and vice versa). Start with a default of the last returned format being Celsius.
+
+1. declare a new function toggleTemperatureDisplay
+
+2. create a parameter called currentTemp which will take in a number input 
+
+3. Assume for now currentTemp parameter will be in Celcius
+
+4. BODY OF THE FUNCTION
+
+    CONVERT A TEMPERATURE IN Celcius TO Fahrenheit
+
+    A. function takes in a parameter currentTemp
+    - But how do we know if currentTemp is C or F?
+    - The function can't tell if inputTemp is C or F, but it can test if a variable is True or False
+    - And how do we toggle it between C & F?
+
+    B. The function needs to know if it's C or F so that it can toggle it to the opposite
+    - Take the input parameter inputTemp and change it to T or F within the body of the function, 
+    - depending on whether the variable is True of False 
+    - We will create a new variable which is the boolean isCelcius
+    - We will set this to True initially (meaning temperature is in Celcius by default)
+    - If isCelcius is true, we need to convert inputTemp to Fahrenheit
+
+5. RETURN OUTPUT
+
+    - Temperature in either Celcius or Fahrenheit
+
+6. Build the above and test it works
+
+7. Update the plan to add the inverse logic, Fahrenheit to Celcius
+
+8. Test again
+
+9. Refactor the code to call the functions we already produced at MVP1 & MVP2
+
+10. Test again!
