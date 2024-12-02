@@ -1,0 +1,72 @@
+// Develop a JavaScript function displayTemperatureInCelsius -- done
+// that takes in a numerical Fahrenheit temperature reading -- done
+// and converts it to Celsius
+
+// returning the number representing the Celsius value. 
+
+
+function displayTemperatureInCelsius(temperatureInFahrenheit){
+
+    // let temperatureInCelsius = (temperatureInFahrenheit - 32) * 5/9;
+
+    return (temperatureInFahrenheit - 32) * 5/9 + "°C";
+
+}
+console.log(displayTemperatureInCelsius(50))
+
+
+// Implement another function displayTemperatureInFahrenheit that performs the inverse operation.
+
+// declare function displayTempInFahrenheit with input parameter in celsius
+// convert from celsius to fahrenheit
+// return the fahrenheit temp
+
+function displayTemperatureInFahrenheit(tempInCelsius){
+
+    // (0°C × 9/5) + 32 
+
+    // let tempInFahrenheit = ( tempInCelsius * 9/5 ) + 32
+
+    return ( tempInCelsius * 9/5 ) + 32  + "°F"
+}
+
+console.log(displayTemperatureInFahrenheit(-6))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 1. func toggleTempDisplay
+// 2. parameter will be a number (assuming for now it is in C)
+// 3. if the temp is in celsius, return function displayTempInFahrenheit 
+// 4. else, return displayTempInCelsius
+
+
+let inputTemp = 40 
+let isCelsius = false
+
+function toggleTemperatureDisplay (inputTemp){
+
+    if (isCelsius === true){
+        // current calculation for inputTemp = celsius
+        isCelsius = false
+        return ( inputTemp * 9/5 ) + 32  + "°F"
+    } else {
+        // else return calculation for inputTemp = fahrenheit
+        return (inputTemp - 32) * 5/9 + "°C";
+    }
+
+}
+console.log(isCelsius)
+console.log(toggleTemperatureDisplay(inputTemp))
